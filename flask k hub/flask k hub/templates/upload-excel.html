@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Excel File</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-image: url('https://as1.ftcdn.net/v2/jpg/02/40/75/82/1000_F_240758298_u71Sz4lY9pjzgpn0RBbzvdmjU5KXYrBJ.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <h1>Upload Excel File</h1>
+        <form method="post" action="/view" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".xlsx, .xls">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>
+
+

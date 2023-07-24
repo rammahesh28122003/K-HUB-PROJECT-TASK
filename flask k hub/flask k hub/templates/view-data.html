@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Visualization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-image: url('https://img.freepik.com/premium-photo/abstract-white-design-background-with-smooth-wavy-lines_476363-6179.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <h1>...DATA TABLE...</h1>
+        <table class="data-table">
+            {{ table | safe }}
+        </table>
+
+        <div style="text-align: center;">
+            <h2>Pie Chart:</h2>
+            <img src="data:image/png;base64,{{ pie_plot_base64 }}" alt="Pie Chart">
+        </div>
+
+        <div style="text-align: center;">
+            <h2>Bar Plot:</h2>
+            <img src="data:image/png;base64,{{ bar_plot_base64 }}" alt="Bar Plot">
+        </div>
+    </div>
+</body>
+</html>
